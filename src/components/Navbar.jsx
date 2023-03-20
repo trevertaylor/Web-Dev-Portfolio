@@ -1,13 +1,12 @@
 import React from "react"
 import { menuItems } from "./menuItems"
-import logo from "../assets/images/logo.png";
 
 
 export default function Navbar(){
     return(
     <header className="uk-sticky bg-black" data-uk-sticky>
         <div class="logo-container px-4 py-3">
-            <img src={logo} height="30px" width="30px" />
+            <img src="../assets/images/logo.png" height="30px" width="30px" />
         </div>
         <div class="menu-wrap">
             <input type="checkbox" class="toggler" />
