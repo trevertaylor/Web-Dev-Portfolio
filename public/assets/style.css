@@ -1,0 +1,216 @@
+.section-1 {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-attachment: fixed;
+  background-color: black;
+}
+@media screen and (max-width: 960px) {
+  .section-1 p {
+    font-size: 35px;
+  }
+}
+.section-1 h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 960px) {
+  .section-1 h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .section-1 h1 {
+    font-size: 65px;
+  }
+}
+.section-1 .blob {
+  width: 450px;
+  height: 450px;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 48px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 115px;
+  background-image: url("images/me.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1200px) {
+  .section-1 .blob {
+    width: 250px;
+    height: 270px;
+  }
+}
+.section-1 .blob::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #f87171;
+  transform: translateY(-55px);
+  height: 500px !important;
+  width: 400px !important;
+  border-top-right-radius: 170px;
+  border-top-left-radius: 48px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 115px;
+}
+@media screen and (max-width: 1200px) {
+  .section-1 .blob::after {
+    width: 270px !important;
+    height: 270px !important;
+  }
+}
+
+.section-2::after {
+  position: relative;
+  content: "";
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden !important;
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  /* background: var(--primary-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Top and bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves line down */
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turn Lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.menu-wrap .menu > div {
+  background-color: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}/*# sourceMappingURL=style.css.map */

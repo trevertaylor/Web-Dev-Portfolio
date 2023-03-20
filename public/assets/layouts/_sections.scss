@@ -1,0 +1,66 @@
+.logo-container{
+
+}
+
+.section-1{
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-attachment: fixed;
+    background-color: black;
+    p{
+        @media screen and (max-width: 960px){
+            font-size: 35px;
+        }
+    }
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        @media screen and (max-width: 960px){
+            font-size: 55px;
+        }
+        @media screen and (min-width: 960px){
+            font-size: 65px;
+        }
+    }
+    .blob{
+        width: 450px;
+        height: 450px;
+         border-top-left-radius: 120px;
+        border-top-right-radius: 48px;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 115px; 
+        background-image: url("images/me.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 1200px){
+            width: 250px;
+            height: 270px;
+        }
+    }
+    .blob::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: #f87171;
+        transform: translateY(-55px);
+        height: 500px !important;
+        width: 400px !important;
+        border-top-right-radius: 170px;
+        border-top-left-radius: 48px;
+        border-bottom-right-radius: 90px;
+        border-bottom-left-radius: 115px;
+        @media screen and (max-width: 1200px){
+            width: 270px !important;
+            height: 270px !important;
+        }    
+    }
+    
+}
+
+.section-2::after{
+    position: relative;
+    content: "";
+}
