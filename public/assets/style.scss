@@ -1,9 +1,15 @@
 
 @import "layouts/sections";
 
-body{
-    background-color: black;
+@import "layouts/images";
+body, html{
     overflow-x: hidden !important;
+    background-size: cover;
+    background-image: url(../assets/images/test-mountain.svg);
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-attachment: fixed;
+    max-height: 100%;
 
 }
 
@@ -12,7 +18,7 @@ body{
     top: 0;
     right: 0;
     z-index: 1;
-    background-color: black;
+    background-color: transparent;
 }
 .menu-wrap .toggler{
     position: absolute;
@@ -133,3 +139,61 @@ body{
     text-decoration: none;
     transition: color 0.4s ease;
 }
+
+.tagInput {
+    position: relative;
+    border-style: none;
+    border: none;
+    display: block;
+    flex: 1 1 auto;
+    margin: 5px;
+    min-height: 100%;
+    font-size: 12pt;
+  }
+  
+  .tagInputWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .tagInputWrapper :focus {
+    outline: blue;
+  }
+  
+  .tagsList {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 5px;
+    
+    li {
+      font-size: 11pt;
+      display: inline-block;
+      margin: 3px;
+      padding: 3px 5px 3px 5px;
+      border-radius: 4px;
+      background: #ddd;
+      color: #444;
+      
+      &.clickable:hover {
+        background: #aaa;
+        cursor: pointer;
+        color: black;
+      }
+      
+      a {
+        text-decoration: none;
+        // color: #ff5569;
+        color: #666;
+        margin-left: 5px;
+        &:hover {
+          color: #dd3345;
+        }
+  
+        padding: 0px 2px 0px 2px;
+      }
+    }
+  }

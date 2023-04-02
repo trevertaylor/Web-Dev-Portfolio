@@ -4,9 +4,9 @@ import { menuItems } from "./menuItems"
 
 export default function Navbar(){
     return(
-    <header className="uk-sticky bg-black" data-uk-sticky>
+    <header className="uk-sticky" data-uk-sticky>
         <div class="logo-container px-4 py-3">
-            <img src="../assets/images/logo.png" height="30px" width="30px" />
+            <span><h3 className="text-white text-2xl">trevertaylor.dev</h3></span>
         </div>
         <div class="menu-wrap">
             <input type="checkbox" class="toggler" />

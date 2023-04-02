@@ -2,27 +2,60 @@
 
 }
 
-.section-1{
-    height: 80vh;
+.wrapper{
+    height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    background-attachment: fixed;
-    background-color: black;
+   .section-1{
+    width: 100%;
+    @media screen and (max-width: 640px ){
+        transform: translateY(25em);
+    }
+
+    button{
+        width: 200px;
+        @media screen and (max-width: 420px){
+            width: 160px;
+        }
+    }
+    .myimage{
+        position: relative;
+        z-index: 1;
+    }
+    .myimage::after{
+        content: "";
+        position: absolute;
+        z-index: 0;
+        background: #f87171;
+        height: 500px !important;
+        width: 400px !important;
+        border-top-right-radius: 170px;
+        border-top-left-radius: 48px;
+        border-bottom-right-radius: 90px;
+        border-bottom-left-radius: 115px;
+    }
+   }
+
     p{
+        transition: 0.2s ease;
         @media screen and (max-width: 960px){
             font-size: 35px;
+        }
+        @media screen and (max-width: 400px){
+            font-size: 30px;
         }
     }
     h1{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
+        transition: 0.2s ease;
         @media screen and (max-width: 960px){
             font-size: 55px;
         }
         @media screen and (min-width: 960px){
             font-size: 65px;
+        }
+        @media screen and (max-width: 400px){
+            font-size: 45px;
         }
     }
     .blob{
@@ -61,5 +94,5 @@
 }
 
 .section-2{
-    background-image: url(images/layered-peaks-haikei.png); max-width: 100%; height: 300px; background-repeat: no-repeat;
+
 }

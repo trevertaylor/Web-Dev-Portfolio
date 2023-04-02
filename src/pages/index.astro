@@ -2,77 +2,83 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar';
+import MyImage from '../components/MyImage';
+import Buttons from '../components/Buttons';
+
 
 let title = 'Trever Taylor - Full Stack Developer';
 ---
 
 <Layout>
 	<Navbar />
+	<div class="wrapper">
 	<div class="section-1">
-		<div class="uk-position uk-position-center">
-			<div class="uk-grid-collapse uk-child-width-1-2@s" data-uk-grid>
-				<div class="uk-card">
-					<div class="uk-flex uk-flex-middle uk-flex-center">
-						<div data-aos="fade-left"  data-aos-easing="ease-in">
-							<p class="text-red-400 text-6xl font-bold">Hello, </p>
-						</div>
-						<div data-aos="fade-up-left"  data-aos-delay="500" data-aos-easing="ease-in">
-							<p class="text-white text-5xl mx-3">I</p>
-						</div>
-						<div data-aos="fade-up-left"  data-aos-delay="600" data-aos-easing="ease-in">
-							<p class="text-white text-5xl">am</p>
-						</div>
-					</div>
-					<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-top">
-						<div data-aos="fade-up-left" data-aos-duration="1700" data-aos-delay="700">
-							<h1 class="text-white text-9xl">Trever</h1>
-						</div>
-						<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="900">
-							<h1 class="text-white text-9xl px-3">Taylor</h1>
-						</div>
-					</div>
-					<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-top">
-						<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1700">
-							<p class="text-white text-5xl uk-margin-left mx-1">A</p>
-						</div>
-						<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1800">
-							<p class="text-red-400 text-5xl mx-1 font-bold">Full</p>
-						</div>
-						<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1900">
-							<p class="text-red-400 text-5xl mx-1 font-bold">Stack</p>
-						</div>
-						<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="2000">
-							<p class="text-white text-5xl mx-1">Developer</p>
-						</div>
-					</div>
-				</div>
-				<div class="uk-card uk-margin-top">
-					<div class="uk-flex uk-flex-center">
-						<div class="uk-flex-center">
-							<div class="blob mx-40 sm:mx-2 py-10 uk-margin-top">
-
+		<div class="uk-container uk-container-xlarge">
+			<div class="uk-position uk-position-center">
+				<div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+					<div>
+						<div class="uk-card">
+							<div class="uk-card">
+								<div class="uk-flex uk-flex-middle uk-flex-center">
+									<div data-aos="fade-left"  data-aos-easing="ease-in">
+										<p class="text-red-400 text-5xl font-bold">Hello, </p>
+									</div>
+									<div data-aos="fade-up-left"  data-aos-delay="500" data-aos-easing="ease-in">
+										<p class="text-white text-5xl mx-3">I</p>
+									</div>
+									<div data-aos="fade-up-left"  data-aos-delay="600" data-aos-easing="ease-in">
+										<p class="text-white text-5xl">am</p>
+									</div>
+								</div>
+								<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-top">
+									<div data-aos="fade-up-left" data-aos-duration="1700" data-aos-delay="700">
+										<h1 class="text-white text-9xl px-2">Trever</h1>
+									</div>
+									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="900">
+										<h1 class="text-white text-9xl px-2">Taylor</h1>
+									</div>
+								</div>
+								<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-top">
+									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1700">
+										<p class="text-white text-5xl uk-margin-left mx-1">A</p>
+									</div>
+									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1800">
+										<p class="text-red-400 text-5xl mx-1 font-bold">Full</p>
+									</div>
+									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1900">
+										<p class="text-red-400 text-5xl mx-1 font-bold">Stack</p>
+									</div>
+									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="2000">
+										<p class="text-white text-5xl mx-1">Developer</p>
+									</div>
+								</div>
+								<div class="uk-flex uk-flex-center uk-flex-middle uk-margin-top">
+									<i class="fa-brands fa-square-github text-white text-6xl"></i>
+									<i class="fa-brands fa-linkedin text-white text-6xl uk-margin-left uk-margin-right"></i>
+									<i class="fa-brands fa-square-facebook text-white text-6xl  uk-margin-right"></i>
+									<i class="fa-brands fa-square-instagram text-white text-6xl"></i>
+								</div>
+								<div class="uk-flex uk-flex-center">
+									<Buttons />
+								</div>
 							</div>
 						</div>
 					</div>
-
-				</div>
-				<div class="uk-flex uk-flex-center uk-flex-middle">
-					<i class="fa-brands fa-square-github text-white text-6xl"></i>
-					<i class="fa-brands fa-linkedin text-white text-6xl uk-margin-left uk-margin-right"></i>
-					<i class="fa-brands fa-square-facebook text-white text-6xl  uk-margin-right"></i>
-					<i class="fa-brands fa-square-instagram text-white text-6xl"></i>
-				</div>
+					<div>
+						<div class="uk-card">
+							<div class="sm:mx-2 mx-24 uk-margin-top">
+								<MyImage />
+							</div>
+						</div>
+					</div>
 					
 				</div>
+			
+		</div>
 			</div>
 			
 	</div>
-	<div class="separator"></div>
-	<div class="section-2 bg-black">
-		<div class="mx-7 py-5">
-			<h2 class="text-white text-5xl font-bold">Proficiencies</h2>
-		</div>
-	</div>
+	
 </Layout>
 		
 		

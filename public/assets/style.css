@@ -1,32 +1,73 @@
-.section-1 {
-  height: 80vh;
+.wrapper {
+  height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-  background-attachment: fixed;
-  background-color: black;
+}
+.wrapper .section-1 {
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .wrapper .section-1 {
+    transform: translateY(25em);
+  }
+}
+.wrapper .section-1 button {
+  width: 200px;
+}
+@media screen and (max-width: 420px) {
+  .wrapper .section-1 button {
+    width: 160px;
+  }
+}
+.wrapper .section-1 .myimage {
+  position: relative;
+  z-index: 1;
+}
+.wrapper .section-1 .myimage::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background: #f87171;
+  height: 500px !important;
+  width: 400px !important;
+  border-top-right-radius: 170px;
+  border-top-left-radius: 48px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 115px;
+}
+.wrapper p {
+  transition: 0.2s ease;
 }
 @media screen and (max-width: 960px) {
-  .section-1 p {
+  .wrapper p {
     font-size: 35px;
   }
 }
-.section-1 h1 {
+@media screen and (max-width: 400px) {
+  .wrapper p {
+    font-size: 30px;
+  }
+}
+.wrapper h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  transition: 0.2s ease;
 }
 @media screen and (max-width: 960px) {
-  .section-1 h1 {
+  .wrapper h1 {
     font-size: 55px;
   }
 }
 @media screen and (min-width: 960px) {
-  .section-1 h1 {
+  .wrapper h1 {
     font-size: 65px;
   }
 }
-.section-1 .blob {
+@media screen and (max-width: 400px) {
+  .wrapper h1 {
+    font-size: 45px;
+  }
+}
+.wrapper .blob {
   width: 450px;
   height: 450px;
   border-top-left-radius: 120px;
@@ -38,12 +79,12 @@
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1200px) {
-  .section-1 .blob {
+  .wrapper .blob {
     width: 250px;
     height: 270px;
   }
 }
-.section-1 .blob::after {
+.wrapper .blob::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -57,22 +98,24 @@
   border-bottom-left-radius: 115px;
 }
 @media screen and (max-width: 1200px) {
-  .section-1 .blob::after {
+  .wrapper .blob::after {
     width: 270px !important;
     height: 270px !important;
   }
 }
 
-.section-2 {
-  background-image: url(images/layered-peaks-haikei.png);
-  max-width: 100%;
-  height: 300px;
-  background-repeat: no-repeat;
+img.me {
+  border-radius: 50%;
 }
 
-body {
-  background-color: black;
+body, html {
   overflow-x: hidden !important;
+  background-size: cover;
+  background-image: url(../assets/images/test-mountain.svg);
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-attachment: fixed;
+  max-height: 100%;
 }
 
 .menu-wrap {
@@ -80,7 +123,7 @@ body {
   top: 0;
   right: 0;
   z-index: 1;
-  background-color: black;
+  background-color: transparent;
 }
 
 .menu-wrap .toggler {
@@ -215,4 +258,57 @@ body {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
+}
+
+.tagInput {
+  position: relative;
+  border-style: none;
+  border: none;
+  display: block;
+  flex: 1 1 auto;
+  margin: 5px;
+  min-height: 100%;
+  font-size: 12pt;
+}
+
+.tagInputWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tagInputWrapper :focus {
+  outline: blue;
+}
+
+.tagsList {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 5px;
+}
+.tagsList li {
+  font-size: 11pt;
+  display: inline-block;
+  margin: 3px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 4px;
+  background: #ddd;
+  color: #444;
+}
+.tagsList li.clickable:hover {
+  background: #aaa;
+  cursor: pointer;
+  color: black;
+}
+.tagsList li a {
+  text-decoration: none;
+  color: #666;
+  margin-left: 5px;
+  padding: 0px 2px 0px 2px;
+}
+.tagsList li a:hover {
+  color: #dd3345;
 }/*# sourceMappingURL=style.css.map */
