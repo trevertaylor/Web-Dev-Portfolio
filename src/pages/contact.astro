@@ -9,9 +9,63 @@ import Buttons from '../components/Buttons';
 let title = 'Contact';
 ---
 
+
+
 <Layout>
 	<Navbar />
 	<div class="wrapper">
-        
+        <div class="uk-container">
+            <div class="uk-card uk-card-default uk-card-body mt-20 uk-border-rounded">
+                <form id="form">
+                    <div class="field">
+                      <label for="from_name">Your Name</label>
+                      <input type="text" class="uk-input" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                      <label for="email">Email</label>
+                      <input type="email" class="uk-input" name="email" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="uk-input" name="subject" id="subject">
+                      </div>
+                    <div class="field">
+                      <label for="message">Message</label>
+                      <textarea class="uk-textarea" rows="5" name="message" id="message" />
+                    </div>
+                  
+                    <input type="submit" class="uk-button uk-button-danger mt-4 bg-red-500 uk-border-rounded"id="button" value="Send Email" >
+                  </form>
+                  
+                
+            </div>
+
+        </div>
     </div>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    
+    const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = import.meta.env.PUBLIC_SERVICE_ID;
+   const templateID = import.meta.env.PUBLIC_TEMPLATE_ID;
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      window.location.href = "/thankyou";
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+   
 </Layout>

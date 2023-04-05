@@ -6,19 +6,17 @@ export default function Portfolio(){
         
         <div class="portfolio">
             
-        <div class="uk-position uk-position-center">
-            <h1 class="text-6xl text-center font-bold text-white my-10">
+        
+            <h1 class="text-6xl sm:text-4xl text-center font-bold text-white my-10">
                 Portfolio of Work
             </h1>
                 <hr class="uk-divider-icon" />
              
-             <div class="uk-container uk-container-large">
-                    <div className="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-match uk-grid-large" data-uk-grid>
+             <div class="uk-container">
+                    <div className="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match uk-grid-large" data-uk-grid>
                         {portfolioItems.map((portfolio, index) => {
                                 return (
                                     <>
-                                    
-                                   
                                     <div class="uk-text-center box">
                                          <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
                                             <img src={portfolio.imageurl} class="uk-border-rounded" width="2100" height="1400" alt="" />
@@ -28,14 +26,14 @@ export default function Portfolio(){
                                                 </div>
                                         </div>
                                         </div>
-                                        </>
+                                     </>
                                 );
                                 })}
                                 </div>
                             </div>
-                            <p class="text-white py-10"><i>Disclaimer: I do not take design/hosting credit for projects done within my current employer. It is simply a showcase of what I have worked on that have helped me further build my skills.  </i></p>
+                            <p class="text-white py-10"><i>Disclaimer: I do not own any rights to projects done within my current employer nor do I take any design credit. It is simply a showcase of what I have worked on both professionally and personally that have helped me further build my skills.  </i></p>
                          </div>
-                    </div>
+                    
     )
     
                             }

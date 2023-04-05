@@ -311,4 +311,15 @@ body, html {
 }
 .tagsList li a:hover {
   color: #dd3345;
+}
+
+.active {
+  background-color: #191919;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+@media screen and (max-width: 640px) {
+  .portfolio p {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=style.css.map */
