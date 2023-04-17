@@ -22,8 +22,8 @@ export default function Navbar(){
                                 </ul>
                             </nav>
                         </div>
-                        <div class="uk-hidden@m uk-width-1-4 mobile-container"></div>
-                            <a class="uk-hidden@m translate-x-20" uk-toggle="target: #offcanvas-overlay"><i class="fa fa-bars fa-2x text-white"></i></a>
+                        <div class="uk-hidden@m uk-width-1-2 mobile-container"></div>
+                            <a class="uk-hidden@m translate-x-12" uk-toggle="target: #offcanvas-overlay"><i class="fa fa-bars fa-2x text-white"></i></a>
 
                                 <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
                                     <div class="uk-offcanvas-bar bg-slate-900 w-full ease-linear">
