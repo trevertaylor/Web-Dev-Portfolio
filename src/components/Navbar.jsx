@@ -4,6 +4,7 @@ import { menuItems } from "./menuItems"
 
 export default function Navbar(){
     return(
+        <div class="navbar-container">
         <div class="uk-container uk-container-large mx-10">
                 <div class="uk-grid uk-grid-large uk-child-width-1-2 pt-3" data-uk-grid>
                     <div class="logo-container px-4">
@@ -52,6 +53,7 @@ export default function Navbar(){
                                     </div>
                             </div>
                 </div>
+            </div>
             
             
                 {/* <div data-uk-off-canvas>
