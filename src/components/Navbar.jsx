@@ -9,12 +9,12 @@ export default function Navbar(){
         <div class="navbar-container">
         <div class="uk-container uk-container-large mx-10">
                 <div class="uk-grid pt-3" data-uk-grid>
-                    <div class="logo-container uk-width-1-2">
+                    <div class="logo-container">
                         <div class="uk-flex uk-flex-center">
                            <a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a>
                          </div>
                     </div>
-                    <div class="uk-visible@m uk-width-1-2 uk-flex uk-flex-right">
+                    <div class="uk-visible@m uk-flex uk-flex-right">
                          <nav>
                                 <ul className="menus uk-flex uk-flex-right">
                                     {menuItems.map((menu, index) => {
