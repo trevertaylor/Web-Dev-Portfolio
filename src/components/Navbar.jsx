@@ -5,7 +5,7 @@ import { menuItems } from "./menuItems"
 export default function Navbar(){
     return(
         <div class="uk-container uk-container-large mx-10">
-                <div class="uk-grid uk-child-width-1-2 pt-3">
+                <div class="uk-grid uk-child-width-1-2 pt-3" data-uk-grid>
                     <div class="logo-container px-4">
                         <span><a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a></span>
                     </div>
