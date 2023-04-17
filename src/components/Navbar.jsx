@@ -9,7 +9,7 @@ export default function Navbar(){
         <div class="uk-container uk-container-large mx-10">
                 <div class="uk-grid pt-3" data-uk-grid>
                     <div class="logo-container px-4 uk-width-1-2">
-                        <span><a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a></span>
+                       <a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a>
                     </div>
                     <div class="uk-visible@m uk-width-1-2 uk-flex uk-flex-right">
                          <nav>
