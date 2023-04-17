@@ -15,7 +15,7 @@ export default function Section1(){
 							</div>
 							<div class="flex">
 								<div data-aos="fade-up" data-aos-delay="700">
-										<h2 class="text-4xl text-white py-7">UI</h2>
+										<h2 class="text-4xl text-white py-7">Web</h2>
 								</div>
 								<div data-aos="fade-up" data-aos-delay="800">
 									<h2 class="text-4xl text-white py-7 ml-2">&</h2>
