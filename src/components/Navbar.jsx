@@ -9,7 +9,7 @@ export default function Navbar(){
                     <div class="logo-container px-4">
                         <span><a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a></span>
                     </div>
-                    <div class="uk-visible@m uk-flex uk-flex-right">
+                    <div class="uk-visible@m translate-x-12 uk-flex uk-flex-right">
                          <nav>
                                 <ul className="menus uk-flex uk-flex-right">
                                     {menuItems.map((menu, index) => {
