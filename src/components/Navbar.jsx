@@ -5,11 +5,11 @@ import { menuItems } from "./menuItems"
 export default function Navbar(){
     return(
         <header class="uk-sticky bg-slate-800 h-14" data-uk-sticky>
-        <div class="uk-flex uk-flex-center">
+        
         <div class="navbar-container">
         <div class="uk-container uk-container-large mx-10">
                 <div class="uk-grid pt-3" data-uk-grid>
-                    <div class="logo-container ml-3 -translate-x-44 uk-width-1-2">
+                    <div class="logo-container uk-width-1-2">
                         <div class="uk-flex uk-flex-center">
                            <a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a>
                          </div>
@@ -58,7 +58,7 @@ export default function Navbar(){
                                 </div>
                             </div>
                             </div>
-                    </div>
+                   
                 </div>
             </header>
             
