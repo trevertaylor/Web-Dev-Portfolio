@@ -7,7 +7,7 @@ export default function Navbar(){
     <header className="uk-sticky bg-slate-800 h-14" data-uk-sticky>
         <div class="uk-container mx-10">
         
-                <div class="uk-grid pt-3" data-uk-grid>
+                <div class="uk-flex uk-flex-center pt-3">
                     <div class="logo-container px-4 uk-width-1-2">
                         <span><a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a></span>
                     </div>
