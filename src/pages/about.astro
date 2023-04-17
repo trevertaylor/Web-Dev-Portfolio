@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar';
 import MyImage from '../components/MyImage';
 import Buttons from '../components/Buttons';
+import Footer from '../components/footer';
 
 
 let title = 'About';
@@ -11,6 +12,38 @@ let title = 'About';
 
 <Layout>
 	<Navbar />
-	<div class="wrapper">
+	<div class="about min-h-screen">
+		<div class="uk-container">
+			<div class="flex">
+				<div data-aos="fade-up">
+					<h1 class="text-white font-bold text-5xl pt-10">About</h1>
+				</div>
+				<div data-aos="fade-up" data-aos-delay="100">
+					<h1 class="text-white font-bold text-5xl pt-10 pl-2">Me</h1>
+				</div>
+				
+			</div>
+			<p class="text-white text-xl pt-10">
+				Welcome to my portfolio site! My name is Trever Taylor, and I'm a web developer with a passion for creating beautiful, functional websites.
+			</p>
+			<p class="text-white text-xl pt-10">
+				I've always loved the internet and the way it connects people from all over the world. When I was younger, I spent countless hours tinkering with HTML, CSS, Javascript, etc.. teaching myself how to build basic websites. As I got older, I knew that I wanted to pursue a career in web development, and I worked hard to gain the skills and knowledge I needed to make that dream a reality.
+			</p>
+			<p class="text-white text-xl pt-10">
+				Today, I specialize in creating custom websites that are tailored to my clients' needs. I work with a variety of programming languages and platforms, including HTML, CSS, JavaScript, WordPress, and React, to name a few. No matter the project, I have the skills and expertise to bring your vision to life.
+			</p>
+			<p class="text-white text-xl pt-10">
+				What sets me apart as a web developer is my commitment to quality and attention to detail. I believe that every website should be a reflection of its owner, and I work closely with my clients to ensure that their site is not only beautiful and functional but also true to their brand and mission. I take pride in delivering projects on time and within budget, and I'm always available to answer any questions or concerns that my clients may have.
+			</p>
+			<p class="text-white text-xl pt-10">
+				When I'm not coding, you can usually find me exploring the outdoors or spending time with my family and friends. I'm an avid hiker and camper, and I love nothing more than getting away from the computer and immersing myself in nature.
+			</p>
+			<p class="text-white text-xl pt-10">
+				Thank you for visiting my portfolio site, and I look forward to working with you soon!
+			</p>
+		</div>
     </div>
+	<svg id="visual" viewBox="0 0 960 140" width="960" height="140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="960" height="140" fill="#475569"></rect><path d="M0 117L12.3 117.3C24.7 117.7 49.3 118.3 74 115.7C98.7 113 123.3 107 148 98.5C172.7 90 197.3 79 221.8 77.5C246.3 76 270.7 84 295.2 81.5C319.7 79 344.3 66 369 57.3C393.7 48.7 418.3 44.3 443 54.7C467.7 65 492.3 90 517 103C541.7 116 566.3 117 591 110.7C615.7 104.3 640.3 90.7 664.8 80.8C689.3 71 713.7 65 738.2 70.5C762.7 76 787.3 93 812 101.3C836.7 109.7 861.3 109.3 886 101.8C910.7 94.3 935.3 79.7 947.7 72.3L960 65L960 141L947.7 141C935.3 141 910.7 141 886 141C861.3 141 836.7 141 812 141C787.3 141 762.7 141 738.2 141C713.7 141 689.3 141 664.8 141C640.3 141 615.7 141 591 141C566.3 141 541.7 141 517 141C492.3 141 467.7 141 443 141C418.3 141 393.7 141 369 141C344.3 141 319.7 141 295.2 141C270.7 141 246.3 141 221.8 141C197.3 141 172.7 141 148 141C123.3 141 98.7 141 74 141C49.3 141 24.7 141 12.3 141L0 141Z" fill="#0f172a" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+
+	<Footer />
 </Layout>

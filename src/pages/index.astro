@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar';
-import MyImage from '../components/MyImage';
 import Buttons from '../components/Buttons';
+import React from '@astrojs/react';
+import Section1 from '../components/homepage-sections/Section1';
+import Section2 from '../components/homepage-sections/Section2';
+import Section3 from '../components/homepage-sections/Section3';
+import Footer from '../components/footer';
 
 
 let title = 'Trever Taylor - Full Stack Developer';
@@ -11,75 +14,13 @@ let title = 'Trever Taylor - Full Stack Developer';
 
 <Layout>
 	<Navbar />
-	<div class="wrapper">
-	<div class="section-1">
-		<div class="uk-container uk-container-xlarge">
-			<div class="uk-position uk-position-center">
-				<div class="uk-grid-large uk-child-width-expand@m uk-text-center" uk-grid>
-					<div>
-						<div class="uk-card">
-							<div class="uk-card">
-								<div class="uk-flex uk-flex-middle uk-flex-center">
-									<div data-aos="fade-left"  data-aos-easing="ease-in">
-										<p class="text-red-400 text-5xl font-bold">Hello, </p>
-									</div>
-									<div data-aos="fade-up-left"  data-aos-delay="500" data-aos-easing="ease-in">
-										<p class="text-white text-5xl mx-3">I</p>
-									</div>
-									<div data-aos="fade-up-left"  data-aos-delay="600" data-aos-easing="ease-in">
-										<p class="text-white text-5xl">am</p>
-									</div>
-								</div>
-								<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-top">
-									<div data-aos="fade-up-left" data-aos-duration="1700" data-aos-delay="700">
-										<h1 class="text-white text-9xl px-2">Trever</h1>
-									</div>
-									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="900">
-										<h1 class="text-white text-9xl px-2">Taylor</h1>
-									</div>
-								</div>
-								<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-top">
-									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1700">
-										<p class="text-white text-5xl uk-margin-left mx-1">A</p>
-									</div>
-									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1800">
-										<p class="text-red-400 text-5xl mx-1 font-bold">Full</p>
-									</div>
-									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1900">
-										<p class="text-red-400 text-5xl mx-1 font-bold">Stack</p>
-									</div>
-									<div data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="2000">
-										<p class="text-white text-5xl mx-1">Developer</p>
-									</div>
-								</div>
-								<div class="uk-flex uk-flex-center uk-flex-middle uk-margin-top">
-									<i class="fa-brands fa-square-github text-white text-6xl"></i>
-									<i class="fa-brands fa-linkedin text-white text-6xl uk-margin-left uk-margin-right"></i>
-									<i class="fa-brands fa-square-facebook text-white text-6xl  uk-margin-right"></i>
-									<i class="fa-brands fa-square-instagram text-white text-6xl"></i>
-								</div>
-								<div class="uk-flex uk-flex-center uk-flex-middle">
-									<Buttons />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card">
-							<div class="sm:mx-2 mx-24 uk-margin-top uk-flex uk-flex-center">
-								<MyImage />
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			
-		</div>
-			</div>
-			
-	</div>
-	</div>
-	
+		<Section1 />
+		<svg id="visual" viewBox="0 0 960 140" width="960" height="140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="960" height="140" fill="#e2e8f0"></rect><path d="M0 88L20 78.7C40 69.3 80 50.7 120 51.3C160 52 200 72 240 71.2C280 70.3 320 48.7 360 49.8C400 51 440 75 480 86.2C520 97.3 560 95.7 600 84.2C640 72.7 680 51.3 720 51.2C760 51 800 72 840 81.3C880 90.7 920 88.3 940 87.2L960 86L960 0L940 0C920 0 880 0 840 0C800 0 760 0 720 0C680 0 640 0 600 0C560 0 520 0 480 0C440 0 400 0 360 0C320 0 280 0 240 0C200 0 160 0 120 0C80 0 40 0 20 0L0 0Z" fill="#1e293b" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+		<Section2 />
+			<svg id="visual" viewBox="0 0 900 450" width="900" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="450" fill="#e2e8f0"></rect><path d="M0 343L21.5 337C43 331 86 319 128.8 323.3C171.7 327.7 214.3 348.3 257.2 350.5C300 352.7 343 336.3 385.8 336.3C428.7 336.3 471.3 352.7 514.2 346.3C557 340 600 311 642.8 308.3C685.7 305.7 728.3 329.3 771.2 333C814 336.7 857 320.3 878.5 312.2L900 304L900 451L878.5 451C857 451 814 451 771.2 451C728.3 451 685.7 451 642.8 451C600 451 557 451 514.2 451C471.3 451 428.7 451 385.8 451C343 451 300 451 257.2 451C214.3 451 171.7 451 128.8 451C86 451 43 451 21.5 451L0 451Z" fill="#475569" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+		<Section3 />
+			<svg id="visual" viewBox="0 0 960 140" width="960" height="140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="960" height="140" fill="#475569"></rect><path d="M0 117L12.3 117.3C24.7 117.7 49.3 118.3 74 115.7C98.7 113 123.3 107 148 98.5C172.7 90 197.3 79 221.8 77.5C246.3 76 270.7 84 295.2 81.5C319.7 79 344.3 66 369 57.3C393.7 48.7 418.3 44.3 443 54.7C467.7 65 492.3 90 517 103C541.7 116 566.3 117 591 110.7C615.7 104.3 640.3 90.7 664.8 80.8C689.3 71 713.7 65 738.2 70.5C762.7 76 787.3 93 812 101.3C836.7 109.7 861.3 109.3 886 101.8C910.7 94.3 935.3 79.7 947.7 72.3L960 65L960 141L947.7 141C935.3 141 910.7 141 886 141C861.3 141 836.7 141 812 141C787.3 141 762.7 141 738.2 141C713.7 141 689.3 141 664.8 141C640.3 141 615.7 141 591 141C566.3 141 541.7 141 517 141C492.3 141 467.7 141 443 141C418.3 141 393.7 141 369 141C344.3 141 319.7 141 295.2 141C270.7 141 246.3 141 221.8 141C197.3 141 172.7 141 148 141C123.3 141 98.7 141 74 141C49.3 141 24.7 141 12.3 141L0 141Z" fill="#0f172a" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+	<Footer />
 </Layout>
 
 

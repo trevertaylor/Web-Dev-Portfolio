@@ -1,98 +1,85 @@
-.logo-container{
-
+.section-1{
+    height: 700px;
+    overflow: none !important;
+    @media screen and (min-width: 640px){
+        height: 500px !important;
+    }
+    .main-info{
+        @media screen and (min-width: 640px){
+            transform: translateY(5em);
+        }
+    }
 }
 
-.wrapper{
-    height: 100vh;
+svg{
     width: 100%;
-   .section-1{
-    width: 100%;
-    @media screen and (max-width: 640px ){
-        transform: translateY(25em);
-    }
-
-    button{
-        width: 200px;
-        @media screen and (max-width: 420px){
-            width: 160px;
-        }
-    }
-    .myimage{
-        position: relative;
-        z-index: 1;
-    }
-    .myimage::after{
-        content: "";
-        position: absolute;
-        z-index: 0;
-        background: #f87171;
-        height: 500px !important;
-        width: 400px !important;
-        border-top-right-radius: 170px;
-        border-top-left-radius: 48px;
-        border-bottom-right-radius: 90px;
-        border-bottom-left-radius: 115px;
-    }
-   }
-
-    p{
-        transition: 0.2s ease;
-        @media screen and (max-width: 960px){
-            font-size: 35px;
-        }
-        @media screen and (max-width: 400px){
-            font-size: 30px;
-        }
-    }
-    h1{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        transition: 0.2s ease;
-        @media screen and (max-width: 960px){
-            font-size: 55px;
-        }
-        @media screen and (min-width: 960px){
-            font-size: 65px;
-        }
-        @media screen and (max-width: 400px){
-            font-size: 45px;
-        }
-    }
-    .blob{
-        width: 450px;
-        height: 450px;
-         border-top-left-radius: 120px;
-        border-top-right-radius: 48px;
-        border-bottom-left-radius: 90px;
-        border-bottom-right-radius: 115px; 
-        background-image: url("images/me.jpeg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        @media screen and (max-width: 1200px){
-            width: 250px;
-            height: 270px;
-        }
-    }
-    .blob::after{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        background-color: #f87171;
-        transform: translateY(-55px);
-        height: 500px !important;
-        width: 400px !important;
-        border-top-right-radius: 170px;
-        border-top-left-radius: 48px;
-        border-bottom-right-radius: 90px;
-        border-bottom-left-radius: 115px;
-        @media screen and (max-width: 1200px){
-            width: 270px !important;
-            height: 270px !important;
-        }    
-    }
-    
+    overflow: hidden;
 }
-
 .section-2{
-
+    height: 600px;
+   @media screen and (min-width: 640px){
+    height: 300px;
+   }
+    .progress {
+        background: rgba(255, 255, 255, 0.024);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 5px;
+        display: flex;
+        height: 20px;
+        min-width: 500px;
+        max-width: 1200px;
+      }
+      
+      .progress-value {
+        animation: load 12s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 100px;
+        
+        height: 12px;
+        width: 0;
+      }
+      
+      @keyframes load {
+        0% { width: 0; }
+        100% { width: 78%; }
+      }
+      .progress-2 {
+        background: rgba(255, 255, 255, 0.024);
+        justify-content: flex-end;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 5px;
+        display: flex;
+        height: 20px;
+        min-width: 500px;
+        max-width: 1200px;
+      }
+      
+      .progress-value-2 {
+        animation: load 12s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 100px;
+        
+        height: 12px;
+        width: 0;
+      }
+      
+      @keyframes load {
+        0% { width: 0; }
+        100% { width: 68%; }
+      }
 }
+
+.section-3{
+    min-height: 600px;
+    @media screen and (min-width: 640px){
+        max-height: 400px !important;
+    }
+}
+
+
+
