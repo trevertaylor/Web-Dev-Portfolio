@@ -15,9 +15,9 @@ export default function Navbar(){
                            <a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a>
                          </div>
                     </div>
-                    <div class="uk-visible@m uk-flex uk-flex-right">
+                    <div class="uk-visible@m">
                          <nav>
-                                <ul className="menus uk-flex uk-flex-right">
+                                <ul className="menus">
                                     {menuItems.map((menu, index) => {
                                         return (
                                             <li className="menu-items uk-animate-slide-top ml-6" key={index}>
