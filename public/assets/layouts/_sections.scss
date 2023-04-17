@@ -16,9 +16,15 @@ svg{
     overflow: hidden;
 }
 .section-2{
-    height: 600px;
+    min-height: 700px;
+    h1, h2{
+      font-size: 35px;
+    }
    @media screen and (min-width: 640px){
-    height: 300px;
+    height: 600px;
+    h1, h2{
+      font-size: 50px;
+    }
    }
     .progress {
         background: rgba(255, 255, 255, 0.024);
@@ -82,5 +88,11 @@ svg{
     }
 }
 
+
+
+.navbar-container{
+  display: flex;
+  justify-content: center;
+}
 
 

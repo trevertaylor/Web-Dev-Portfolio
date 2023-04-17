@@ -19,11 +19,17 @@ svg {
 }
 
 .section-2 {
-  height: 600px;
+  min-height: 700px;
+}
+.section-2 h1, .section-2 h2 {
+  font-size: 35px;
 }
 @media screen and (min-width: 640px) {
   .section-2 {
-    height: 300px;
+    height: 600px;
+  }
+  .section-2 h1, .section-2 h2 {
+    font-size: 50px;
   }
 }
 .section-2 .progress {
@@ -91,6 +97,11 @@ svg {
   }
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
 img.me {
   border-radius: 50%;
 }
@@ -149,7 +160,6 @@ body {
 .tagsList li a {
   text-decoration: none;
   color: #666;
-  margin-left: 5px;
   padding: 0px 2px 0px 2px;
 }
 .tagsList li a:hover {
