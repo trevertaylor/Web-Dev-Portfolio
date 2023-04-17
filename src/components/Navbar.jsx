@@ -5,13 +5,13 @@ import { menuItems } from "./menuItems"
 export default function Navbar(){
     return(
         <header class="uk-sticky bg-slate-800 h-14" data-uk-sticky>
-        <div class="uk-container uk-container-xlarge mx-10">
         <div class="uk-flex uk-flex-center">
+        <div class="uk-container uk-container-xlarge mx-10">
         <div class="navbar-container">
         
-                <div class="uk-grid pt-3" data-uk-grid>
-                    <div class="logo-container">
-                        <div class="uk-flex uk-flex-center">
+                <div class="uk-flex">
+                    <div class="logo-container uk-flex uk-flex-left">
+                        <div class="">
                            <a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a>
                          </div>
                     </div>
@@ -28,7 +28,7 @@ export default function Navbar(){
                                 </ul>
                             </nav>
                         </div>
-                        <div class="uk-hidden@m mobile-container uk-width-1-4"></div>
+                        <div class="uk-hidden@m mobile-container uk-width-1-4 uk-flex uk-flex-right"></div>
                             <a class="uk-hidden@m translate-x-12" uk-toggle="target: #offcanvas-overlay"><i class="fa fa-bars fa-2x text-white"></i></a>
 
                                 <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
