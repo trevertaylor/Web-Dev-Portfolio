@@ -5,8 +5,9 @@ import { menuItems } from "./menuItems"
 export default function Navbar(){
     return(
     <header className="uk-sticky bg-slate-800 h-14" data-uk-sticky>
-        <div class="uk-container mx-10">
         <div class="uk-flex uk-flex-center">
+        <div class="uk-container mx-10">
+        
                 <div class="uk-grid uk-flex uk-flex-middle pt-3" data-uk-grid>
                     <div class="logo-container px-4 uk-width-1-2">
                         <span><a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a></span>
