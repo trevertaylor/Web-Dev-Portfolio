@@ -38,7 +38,7 @@ export default function Section1(){
 						</div>
 					</div>
 					<div class="my-image uk-flex uk-flex-center" data-aos="fade-up" data-aos-delay="1700" data-aos-duration="900">
-						<img src="public/assets/images/me.jpeg" class="uk-border-circle z-50" height="350" width="350" />
+						<img src="../assets/images/me.jpeg" class="uk-border-circle z-50" height="350" width="350" />
 					</div>
 				</div>
 				</div>
