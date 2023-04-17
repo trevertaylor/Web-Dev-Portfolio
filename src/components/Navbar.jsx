@@ -55,28 +55,11 @@ export default function Navbar(){
                                 </div>
                             </div>
                     </div>
-            </div>
-</header>
+                </div>
+            </header>
             
             
-                {/* <div data-uk-off-canvas>
-                    <div>
-                        <div>
-                            <nav>
-                                <ul className="menus">
-                                {menuItems.map((menu, index) => {
-                                    return (
-                                        <li className="menu-items py-3 uk-animate-slide-top" key={index}>
-                                        <a className="text-white text-4xl font-bold" href={menu.url}>{menu.title}</a>
-                                        </li>
-                                    );
-                                    })}
-                                </ul>
-                            </nav>
-                        </div>
-                        </div>
-                    </div>
-                                </div> */}
+                
             
     )
             
