@@ -5,7 +5,6 @@ import { menuItems } from "./menuItems"
 export default function Navbar(){
     return(
     <header className="uk-sticky bg-slate-800 h-14" data-uk-sticky>
-        <div class="uk-flex uk-flex-center">
         <div class="uk-container mx-10">
         
                 <div class="uk-grid uk-flex uk-flex-middle pt-3" data-uk-grid>
@@ -55,7 +54,6 @@ export default function Navbar(){
                                     </div>
                             </div>
                 </div>
-            </div>
             
             
                 {/* <div data-uk-off-canvas>
