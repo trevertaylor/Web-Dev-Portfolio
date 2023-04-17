@@ -6,11 +6,11 @@ export default function Navbar(){
     return(
         <div class="navbar-container uk-flex uk-flex-center">
         <div class="uk-container uk-container-large mx-10">
-                <div class="uk-grid uk-child-width-1-2 pt-3" data-uk-grid>
-                    <div class="logo-container px-4">
+                <div class="uk-grid pt-3" data-uk-grid>
+                    <div class="logo-container px-4 uk-width-1-2">
                         <span><a class="hover:no-underline text-white" href="/"><h3 className="text-white text-2xl">trevertaylor.dev</h3></a></span>
                     </div>
-                    <div class="uk-visible@m translate-x-12 uk-flex uk-flex-right">
+                    <div class="uk-visible@m uk-width-1-2 uk-flex uk-flex-right">
                          <nav>
                                 <ul className="menus uk-flex uk-flex-right">
                                     {menuItems.map((menu, index) => {
@@ -23,7 +23,7 @@ export default function Navbar(){
                                 </ul>
                             </nav>
                         </div>
-                        <div class="uk-hidden@m mobile-container"></div>
+                        <div class="uk-hidden@m mobile-container uk-width-1-4"></div>
                             <a class="uk-hidden@m translate-x-12" uk-toggle="target: #offcanvas-overlay"><i class="fa fa-bars fa-2x text-white"></i></a>
 
                                 <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
