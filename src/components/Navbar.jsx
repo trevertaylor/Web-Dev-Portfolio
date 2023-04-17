@@ -17,7 +17,7 @@ export default function Navbar(){
                     </div>
                     <div class="uk-visible@m">
                          <nav>
-                                <ul className="menus">
+                                <ul className="menus uk-flex">
                                     {menuItems.map((menu, index) => {
                                         return (
                                             <li className="menu-items uk-animate-slide-top ml-6" key={index}>
