@@ -57,6 +57,7 @@ svg{
         height: 20px;
         min-width: 500px;
         max-width: 1200px;
+        overflow-x: hidden !important;
       }
       
       .progress-value-2 {
