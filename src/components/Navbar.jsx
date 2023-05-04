@@ -44,9 +44,9 @@ export default function Navbar(){
                                                     </nav>
                                                             <div class="uk-flex uk-flex-center pt-10 translate-y-20">
                                                                 <div class="uk-grid" data-uk-grid>
-                                                                    <i class="fa-brands fa-github fa-3x"></i>
-                                                                    <i class="fa-brands fa-facebook fa-3x"></i>
-                                                                    <i class="fa-brands fa-linkedin fa-3x"></i>
+                                                                    <a href="https://github.com/trevertaylor" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                                                                    <a href="https://www.facebook.com/trever.taylor.142/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                                                                    <a href="https://www.linkedin.com/in/trever-taylor-651b35167/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
                                                                 </div>
                                                 </div>
                                                     

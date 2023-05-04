@@ -16,7 +16,7 @@ export default function PortfolioHomepage(){
                                             <img src={portfolio.imageurl} class="uk-border-rounded" width="2100" height="1400" alt="" />
                                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                                     <p class="uk-h4 uk-margin-remove font-bold">{portfolio.title}</p>
-                                                    <a href={portfolio.projecturl} class="uk-button uk-button-danger uk-border-rounded bg-red-500 font-bold">View Project</a>
+                                                    <a href={portfolio.projecturl} target="_blank" class="uk-button uk-button-danger uk-border-rounded bg-red-500 font-bold">View Project</a>
                                                 </div>
                                         </div>
                                         </div>

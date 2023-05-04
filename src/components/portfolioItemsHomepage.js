@@ -6,19 +6,19 @@ export const portfolioItemsHomepage = [
     {
       title: 'Kivett Social',
       imageurl: '/assets/images/portfolio-images/kivett-screenshot.png',
-      projecturl: '/kivett',
+      projecturl: 'https://kivettsocial.com',
       tags: ['wordpress', 'custom theme', 'custom programming']
     },
     {
         title: 'Neuropsychology Services of Kansas',
         imageurl: '../assets/images/portfolio-images/neuropsych.png',
-        projecturl: '/neurospych',
+        projecturl: 'https://neuropsychologyservicesofkansas.com',
         tags: ['wordpress', 'custom theme', 'custom programming']
       },
       {
         title: 'Rose Hill Historical Society',
         imageurl: '../assets/images/portfolio-images/rhhs.png',
-        projecturl: '/rhhs',
+        projecturl: 'https://rosehillhistoricalsociety.com',
         tags: ['wordpress', 'custom theme', 'custom programming']
       }
     

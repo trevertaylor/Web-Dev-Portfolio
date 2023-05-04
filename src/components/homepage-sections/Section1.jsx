@@ -29,10 +29,10 @@ export default function Section1(){
 							</div>
 							<div class="flex">
 								<div data-aos="fade-up" data-aos-delay="1300">
-									<button class=" font-bold uk-border-rounded uk-button uk-button-primary bg-red-700 text-white">My Projects</button>
+									<a href="/projects"><button class=" font-bold uk-border-rounded uk-button uk-button-primary bg-red-700 text-white">My Projects</button></a>
 								</div>
 								<div data-aos="fade-up" data-aos-delay="1400">
-									<button class=" font-bold uk-border-rounded uk-button uk-button-primary bg-red-700 ml-2 text-white">Contact Me</button>
+									<a href="/contact"><button class=" font-bold uk-border-rounded uk-button uk-button-primary bg-red-700 ml-2 text-white">Contact Me</button></a>
 								</div>
 							</div>
 						</div>
