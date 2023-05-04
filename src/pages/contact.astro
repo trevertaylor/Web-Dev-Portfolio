@@ -8,6 +8,13 @@ import Footer from '../components/footer';
 
 
 let title = 'Contact';
+
+const recaptchaKey = import.meta.env.RECAPTCHA_SITEKEY;
+
+function onSubmit(token) {
+     document.getElementById("form").submit();
+   }
+
 ---
 
 
@@ -38,7 +45,7 @@ let title = 'Contact';
                       <textarea class="uk-textarea" rows="5" name="message" id="message" required/>
                     </div>
                   
-                    <input type="submit" class="uk-button uk-button-danger mt-4 bg-red-500 uk-border-rounded"id="button" value="Submit" >
+                    <input type="submit" data-sitekey={recaptchaKey} data-callback='onSubmit' data-action='submit' class="uk-button uk-button-danger mt-4 bg-red-500 uk-border-rounded g-recaptcha"id="button" value="Submit" >
                   </form>
             </div>
             
@@ -61,6 +68,7 @@ document.getElementById('form')
 
    const serviceID = import.meta.env.PUBLIC_SERVICE_ID;
    const templateID = import.meta.env.PUBLIC_TEMPLATE_ID;
+   const recaptchaKey = import.meta.env.RECAPTCHA_SITEKEY;
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
