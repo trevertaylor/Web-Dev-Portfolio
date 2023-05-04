@@ -52,7 +52,7 @@ export default function Section2(){
 							</ul>
 						</div>
 					</div>
-					<div class="progress-2 mr-10 py-7" data-aos="fade-left" data-aos-delay="800" data-aos-anchor="#about-section" data-aos-once="true">
+					<div class="progress-2 mr-10 py-7" data-aos-delay="800" data-aos-anchor="#about-section" data-aos-once="true">
 						<div class="progress-value-2 bg-red-700"></div>
 					</div>
 				</div>
