@@ -1,4 +1,4 @@
-import PortfolioHomepage from "../Portfolio-Homepage"
+import PortfolioHomepage from "../PortHomepage"
 
 
 export default function Section3(){
